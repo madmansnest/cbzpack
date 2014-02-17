@@ -1,0 +1,30 @@
+cbzpack
+=======
+
+A utility that creates a Comic Book Zip archive containing all JPEG files in the current directory.
+
+Features
+--------
+
+* If any of the files has the word “cover” (case-insensitive) in its name, the first of such files will be renamed with an “!” in front of the file name, making it the first file in the archive and the first page of the comic.
+
+Requirements
+------------
+
+* Ruby 1.9+
+* rubyzip
+
+Usage
+-----
+
+```
+~ cd my_directory_with_the_comic_images
+~ ruby cbzpack.rb
+```
+
+This will create `my_directory_with_the_comic_images.cbz` file inside `my_directory_with_the_comic_images` directory containing all the files with the extension .jpg or .JPG in that directory.
+
+
+Copyright © 2014 Demian Terentev <demian@infusiastic.me>
+
+This software is published under MIT License (see LICENSE file for details).
